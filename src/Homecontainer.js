@@ -4,7 +4,8 @@ import { useState,useEffect } from "react";
 function Homecontainer(){
   const width=26;
   const height=26;
-  const []=useState([])
+  const [data,Setdata]=useState([])
+  
     return (<>
      <div className="Homecontainer-A1">
       <div className="header">
