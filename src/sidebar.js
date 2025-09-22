@@ -8,14 +8,12 @@ function Sidebar() {
 
         <>
             <div className="MainContainer">
-            
+
                 <div className="SideContainer-d1">
-                
-                <img src="/image/cml2.png" ></img>
+
+                    <img src="/image/cml2.png" ></img>
                     <ul>
-                    
                         <li> Home </li>
-                        
                         <li><Link to='/cart'>Cart</Link></li>
                         <li>Service</li>
                         <li>Delivery</li>
@@ -23,7 +21,7 @@ function Sidebar() {
                     </ul>
                 </div>
             </div>
-            
+
 
         </>
 

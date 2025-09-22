@@ -1,0 +1,119 @@
+/* Full page background & center content */
+.Outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Card-style inner box */
+  .Innerdiv {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 320px;
+    animation: fadeIn 0.6s ease-in-out;
+  }
+  
+  /* Inputs */
+  .Innerdiv input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border 0.3s, box-shadow 0.3s;
+  }
+  
+  .Innerdiv input:focus {
+    border-color: #60a5fa;
+    outline: none;
+    box-shadow: 0 0 6px rgba(96, 165, 250, 0.5);
+  }
+  
+  /* General buttons */
+  .Innerdiv button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: transform 0.2s, background-color 0.3s;
+  }
+  
+  /* Signup button */
+  .signup {
+    background: #22c55e;
+    color: white;
+  }
+  .signup:hover {
+    background: #16a34a;
+    transform: scale(1.02);
+  }
+  .signup a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Clear button */
+  .Innerdiv button:nth-of-type(2) {
+    background: #f87171;
+    color: white;
+  }
+  .Innerdiv button:nth-of-type(2):hover {
+    background: #dc2626;
+    transform: scale(1.02);
+  }
+  
+  /* Login button */
+  .Innerdiv button:nth-of-type(3) {
+    background: #3894cd;
+    color: white;
+  }
+  .Innerdiv button:nth-of-type(3):hover {
+    background: #2b6fa3;
+    transform: scale(1.02);
+  }
+  
+  /* "Or" divider */
+  .or {
+    margin: 15px 0;
+    font-size: 14px;
+    color: #777;
+    position: relative;
+  }
+  .or::before,
+  .or::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background: #ccc;
+  }
+  .or::before {
+    left: 0;
+  }
+  .or::after {
+    right: 0;
+  }
+  
+  /* Simple fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
